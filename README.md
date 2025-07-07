@@ -5,4 +5,14 @@ This repository has been copied directly from https://www.brodo.de/space/nrlmsis
 * For more details on Tudat, we refer to the [project website](https://docs.tudat.space/en/latest/) and our [project Github main page](https://github.com/tudat-team)
 * Conda package for this repository are available on [anaconda](anaconda.org/tudat-team/nrlmsise-00/), which is built through the [tudat-feedstock](https://github.com/tudat-team/nrlmsise-00-feedstock) on [Azure](https://dev.azure.com/tudat-team/feedstock-builds/_build?definitionId=7)
 
+## Build and test
+
+To build and test this code locally:
+
+```bash
+cmake -S . -B build
+make -C build
+```
+
+This creates both the `nrlmsise-00.so` shared library and the `nrlmsise-00_test` executable.
 
